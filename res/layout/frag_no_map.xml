@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:id="@+id/tv_main_menu_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:background="#ffffff"
+        >
+
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.directory.abe.SearchEntryFeature.Presentation.SearchEntryLFrag"
+        android:id="@+id/fragment2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.40"
+        android:background="#FFBB00"
+
+        />
+
+</LinearLayout>

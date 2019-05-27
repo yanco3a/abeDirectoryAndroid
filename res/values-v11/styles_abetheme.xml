@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ButtonabeTheme" parent="android:Widget.Holo.Button">
+	  <item name="android:background">@drawable/abetheme_btn_default_holo_dark</item>
+  </style>
+
+  <style name="ImageButtonabeTheme" parent="android:Widget.Holo.ImageButton">
+	  <item name="android:background">@drawable/abetheme_btn_default_holo_dark</item>
+  </style>
+
+  <style name="SpinnerabeTheme" parent="android:Widget.Holo.Spinner">
+      <item name="android:background">@drawable/abetheme_spinner_background_holo_dark</item>
+      <item name="android:dropDownSelector">@drawable/abetheme_list_selector_holo_dark</item>
+  </style>
+
+  <style name="ProgressBarabeTheme" parent="android:Widget.Holo.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/abetheme_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/abetheme_progress_indeterminate_horizontal_holo_dark</item>
+  </style>
+
+  <style name="SeekBarabeTheme" parent="android:Widget.Holo.SeekBar">
+      <item name="android:progressDrawable">@drawable/abetheme_scrubber_progress_horizontal_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/abetheme_scrubber_progress_horizontal_holo_dark</item>
+      <item name="android:thumb">@drawable/abetheme_scrubber_control_selector_holo_dark</item>
+  </style>
+
+  <style name="RatingBarabeTheme" parent="android:Widget.Holo.RatingBar">
+      <item name="android:progressDrawable">@drawable/abetheme_ratingbar_full_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/abetheme_ratingbar_full_holo_dark</item>
+  </style>
+
+  <style name="RatingBarBigabeTheme" parent="android:Widget.Holo.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/abetheme_ratingbar_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/abetheme_ratingbar_holo_dark</item>
+  </style>
+
+  <style name="RatingBarSmallabeTheme" parent="android:Widget.Holo.RatingBar.Small">
+      <item name="android:progressDrawable">@drawable/abetheme_ratingbar_small_holo_dark</item>
+      <item name="android:indeterminateDrawable">@drawable/abetheme_ratingbar_small_holo_dark</item>
+  </style>
+
+  <style name="ToggleabeTheme" parent="android:Widget.Holo.Button.Toggle">
+      <item name="android:background">@drawable/abetheme_btn_toggle_holo_dark</item>
+  </style>
+
+</resources>

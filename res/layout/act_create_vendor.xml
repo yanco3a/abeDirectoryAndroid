@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    tools:context=".CreateEntryFeature.Presentation.CreateEntryView"
+    android:background="#FF70526F">
+
+    <!--default title set to visible-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        >
+
+    <TextView
+        android:id="@+id/tv_create_listing_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your business listing"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="left"
+        android:layout_weight="0.5"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp" />
+
+    <!-- help, launches help dialog -->
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="right"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:padding="10dp"
+        android:clickable="true"
+        android:textColor="#08BDEB" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:overScrollMode="never" >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!--vendor input-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/business_vendor"-->
+        <!--android:textColor="#8a0829"-->
+        <!--/>-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eT_vendor_name"
+        android:hint="@string/vendor_name"
+        />
+    <!--android:textIsSelectable="false" taken out-->
+
+    <!--companyNo, for Auto-Verification-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/companies_house_number"-->
+        <!--android:textColor="#8a0829"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/automatically_verify"-->
+        <!--android:ems="10"-->
+        <!--/>-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_companyNo"
+        android:hint="@string/companies_house_hint"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        />
+
+     <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/select_a_cat"-->
+         <!--android:ems="10"-->
+         <!--android:textColor="#8a0829"-->
+         <!--/>-->
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/spin_cat"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" />
+
+    <!-- business type -->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/select_type_title"-->
+        <!--android:ems="10"-->
+        <!--android:textColor="#8a0829"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/select_type_txt"-->
+        <!--android:ems="10"/>-->
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/spin_type"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" />
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_tradeVerified"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/briefly_summarise_title"
+        android:ems="10"
+        android:layout_marginTop="10dp"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/briefly_summarise_txt"-->
+        <!--android:ems="10"/>-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_tradeSummary"
+        android:inputType="textMultiLine|textNoSuggestions|textVisiblePassword"
+        android:maxLength="1000"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tradeSummary1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#FFBB00"
+        />
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/let_users_know_how_long_you_have_been_trading_optional"
+        android:layout_marginTop="10dp"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_tradeDate"
+        android:inputType="date"
+        android:hint="@string/trading_date_when_did_this_business_start"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_address_detail_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/any_address_details_title"
+        android:layout_marginTop="10dp"
+        android:ems="10"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/any_address_details_txt"/>-->
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/eT_Address1"
+            android:hint="@string/Address_line1"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/eT_Address2"
+            android:hint="@string/Address_line2"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/eT_Address3"
+            android:hint="@string/Address_line3"
+             />
+
+
+    <!--collect admin postal address, capitalize each word, and disable text suggestions:-->
+    <!--android:inputType="textPostalAddress|textCapWords|textNoSuggestions"-->
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress|textCapWords|textNoSuggestions"
+            android:ems="10"
+            android:textAllCaps="true"
+            android:id="@+id/eT_postcode"
+            android:hint="@string/Post_code"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/contact_details_title"
+        android:layout_marginTop="10dp"
+        android:ems="10"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/contact_details_txt"-->
+        <!--android:ems="10"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/eT_telephone"
+            android:hint="@string/Contact_no"
+             />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/eT_email"
+            android:hint="@string/Email"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Website:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/eT_website"
+            android:hint="@string/Website"
+            android:inputType="textUri"
+            android:text="http://www."
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/were_you_given_a_referral_code_n_use_it_here_to_promote"
+        android:layout_marginTop="10dp"
+        android:ems="10"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/eT_referralCode"
+            android:hint="@string/ReferralCode"
+            android:inputType="textCapWords"
+            />
+
+    <!--admin input-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_adminId"
+        android:visibility="gone"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_adminUsername"
+        android:textColor="#a9a7a7"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/please_check_the_information"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic" />
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Small"
+        android:text="@string/btn_submit_txt"
+        android:id="@+id/btn_create_vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_error"
+        />
+</LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--?? -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="10dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="127dp"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spin_category_search_rad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spin_radius"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Map"
+                    android:id="@+id/chkb_map_view"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_map_view_txt"
+                android:id="@+id/btn_map_view" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            tools:context="com.yancoba.abe.SearchEntryFeature.Presentation.SearchMapsView"/>
+
+
+        <TextView
+            android:id="@+id/tv_someshit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+            android:text=""
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

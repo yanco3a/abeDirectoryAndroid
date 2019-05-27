@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Abe directory</string>
+    <string name="app_title">Abe directory</string>
+    <string name="action_settings">Location Settings</string>
+    <string name="btn_map_view_txt">Map View</string>
+    <string name="tv_search_text">Criteria</string>
+    <string name="action_Uri">Google</string>
+    <string name="featured_entry_title_text">Featured Business</string>
+    <string name="action_create_vendor">Create business</string>
+    <string name="action_email_us">Contact us</string>
+    <string name="action_search_category">Search business</string>
+    <string name="descr_icon_text">icon</string>
+    <string name="Website">website e.g. http://www.abe.com</string>
+    <string name="Email">contact email</string>
+    <string name="Post_code">postcode</string>
+    <string name="Address_line3">address line 3. e.g. London</string>
+    <string name="Address_line2">address line 2</string>
+    <string name="Address_line1">address line 1</string>
+    <string name="vendor_name">business name</string>
+    <string name="Contact_no">contact no.</string>
+    <string name="action_directions">directions</string>
+    <string name="ReferralCode">referral code. e.g. ABC123</string>
+    <string name="action_home">Home</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="tv_log_business_user_text">Business users</string>
+    <string name="tv_reg_business_user_text">Business users</string>
+    <string name="admin_login_title">Business Login</string>
+    <string name="et_login_pswd_hint">password</string>
+     <string name="btn_login_text">login</string>
+    <string name="et_login_hint">email</string>
+    <string name="user_login_title">User Login</string>
+    <string name="tv_l_user_text">Regular users</string>
+    <string name="tv_r_user_text">User registration</string>
+    <string name="tv_r_admin_text">business registration</string>
+    <string name="user_register_title">User Registration</string>
+    <string name="admin_register_title">Business Registration</string>
+    <string name="et_register_hint">email</string>
+    <string name="et_register_pswd_hint">password</string>
+    <string name="btn_u_register_text">Register</string>
+    <string name="btn_a_register_text">Register</string>
+    <string name="action_contact">Contact us</string>
+    <string name="user_review_title">User Reviews</string>
+    <string name="enter_user_review_txt">Have you used this service?</string>
+    <string name="enter_user_review_txt2">Select stars (1–5) to rate, then tell them what you think.</string>
+    <string name="btn_submit_txt">submit</string>
+    <string name="summary_txt">Summary</string>
+    <string name="et_reg_email_hint">email</string>
+    <string name="et_username_hint">username</string>
+    <string name="feedback_title_txt">Testers &amp; Participant Feedback</string>
+    <string name="answ_yes">yes</string>
+    <string name="answ_no">no</string>
+    <string name="tester_fb_q1">1. Are you a business? Yes/No.</string>
+    <string name="tester_fb_q2">2. Which region of London do you live? (Please select. Optional).</string>
+    <string name="tester_fb_q3">3. Which region of London do you shop most for Afro-Caribbean products &amp; services? (Please select. Optional).</string>
+    <string name="tester_fb_q4">4. Were you able to register &amp; login to Abe successfully? (Please select Yes, No, I didn\'t attempt it).</string>
+    <string name="tester_fb_q4a">4.a. If Yes, how easy was it to register &amp; login? (Please select).</string>
+    <string name="tester_fb_q5">5. What feature(s) did you use on the app? (Select all that apply).</string>
+    <string name="tester_fb_q6">6. How easy was it to search for a business(es) on Abe?</string>
+    <string name="tester_fb_q7">7. How impressed were you by the Afro-Caribbean businesses you found on Abe?</string>
+    <string name="tester_fb_q8">8. How often do you think you\'ll use the app in the next six months?</string>
+    <string name="tester_fb_q9">9. Is there anything you would do to improve the app?</string>
+
+
+    <string name="barnet_enfield_haringey">Barnet/Enfield/Haringey</string>
+    <string name="other">Other</string>
+    <string name="brent_harrow">Brent/Harrow</string>
+    <string name="hillingdon">Hillingdon</string>
+    <string name="ealing_hammersmith_hounslow">Ealing/Hammersmith/Hounslow</string>
+    <string name="camden_islington">Camden &amp; Islington</string>
+    <string name="kensington_chelsea_westminster">Kensington &amp; Chelsea/Westminster</string>
+    <string name="east_london_city_of_london">East London &amp; City of London</string>
+    <string name="lambeth_southwark_lewisham">Lambeth/Southwark/Lewisham</string>
+    <string name="kingston_richmond">Kingston &amp; Richmond</string>
+    <string name="merton_sutton_wandsworth">Merton/Sutton/Wandsworth</string>
+    <string name="croydon">Croydon</string>
+    <string name="bexley_bromley_greenwich">Bexley/Bromley/Greenwich</string>
+    <string name="barking_havering">Barking &amp; Havering</string>
+    <string name="redbridge_waltham_forest">Redbridge &amp; Waltham Forest</string>
+    <string name="answ_didnt">i didn\'t attempt it</string>
+    <string name="answ_na">N/A</string>
+    <string name="answ_difficult">difficult</string>
+    <string name="answ_ok">ok</string>
+    <string name="answ_easy">easy</string>
+    <string name="reg_txt">registration</string>
+    <string name="log_txt">login</string>
+    <string name="key_txt">search by keyword</string>
+    <string name="rad_txt">search by radius</string>
+    <string name="rating_txt">search by rating</string>
+    <string name="create_list_txt">create listing</string>
+    <string name="answ_impressed">impressed</string>
+    <string name="answ_neutral">neutral</string>
+    <string name="answ_not_impressed">not impressed</string>
+    <string name="answ_daily">daily</string>
+    <string name="answ_weekly">weekly</string>
+    <string name="answ_fortnightly">fortnightly</string>
+    <string name="answ_monthly">monthly</string>
+    <string name="action_tester_feedback">Feedback</string>
+    <string name="answ_never">never</string>
+    <string name="tester_introduction_txt1">Information in this form is intended to be used as part of a research project to improve Abe.\n\nWhat we want from testers &amp; participants:\n\n1. Complete the following form including your email address. You will soon receive an email with two documents.\n2. Read the Participation Information sheet\n3. Sign the Consent form with your name and email it back. That\'s it!\n\nParticipation in this project is purely voluntary and testers can opt-out at absolutely any time.\n\nPlease use Contact us via the menu if you have any questions about taking part.</string>
+    <string name="tester_email_txt">We require your email address to contact you regarding this project. </string>
+    <string name="email_add_hint">me@abe.com</string>
+    <string name="contact_if_incorrect">Is this your business?</string>
+    <string name="contact_if_incorrect_txt">Please contact us if any information is incorrect.</string>
+    <string name="login_to_review_txt">Login to review this business (regular users only)</string>
+    <string name="tv_required">Required.</string>
+    <string name="tv_optional">Optional.</string>
+    <string name="let_users_know_how_long_you_have_been_trading_optional">Trading since (date):</string>
+    <string name="briefly_summarise_title">Business summary:</string>
+    <string name="briefly_summarise_txt">Sell or describe your business or service.</string>
+
+    <string name="select_type_title"> Select a buiness type:</string>
+    <string name="select_type_txt">\'Store\' - you want users to locate you.\n\n\'Online\' - you trade solely online.\n\n\'Other\' you are unsure.</string>
+    <string name="were_you_given_a_referral_code_n_use_it_here_to_promote">Referral code:</string>
+    <string name="companies_house_number">Companies house number:\nOptional.</string>
+    <string name="automatically_verify">Verify your listing on Abe. Never shown to users.</string>
+    <string name="any_address_details_title">Address details:</string>
+    <string name="any_address_details_txt">This information will be displayed for users to find you.</string>
+    <string name="contact_details_title">Contact details:</string>
+    <string name="contact_details_txt">This information will be displayed for users to contact you.</string>
+    <string name="select_a_cat">Select a product or service category:</string>
+    <string name="trading_date_when_did_this_business_start">01/01/2016</string>
+    <string name="summary_tell_us_about_your_business">We specialise in... Our opening hours are... I provide... (300 chars max)</string>
+    <string name="business_vendor">Business name: Requred</string>
+    <string name="companies_house_hint">company registration number</string>
+    <string name="please_check_the_information">Please check the information provided is correct before you submit. Check the HELP guide above for more details.\nIf you have any questions please contact us.</string>
+    <string name="keyword_hint">search abe directory</string>
+    <string name="keyword_hint_search">business name, category, location</string>
+    <string name="suggestions_hint">suggestions</string>
+    <string name="answ_rate_review">rate &amp; review</string>
+    <string name="a_register_info_text">Register here to instantly create your business listing on abe </string>
+    <string name="u_register_info_text">Register here to leave ratings &amp; reviews on abe </string>
+    <string name="tv_u_switch_register_text">Not yet registered? It\'s quick and free.\nRegister here</string>
+    <string name="tv_a_switch_register_text">Not yet registered? It\'s quick and free.\nRegister here</string>
+    <string name="leave_them_a_brief_review">leave a brief review…</string>
+    <string name="keyword_hint2">enter keyword</string>
+    <string name="answ_none">none</string>
+    <string name="tap_red_marker">(tap red marker for Google maps/directions)</string>
+    <string name="licenses">*Legal notices*</string>
+    <string name="action_licenses">Legal notices</string>
+    <string name="action_guide">Business registration guide.</string>
+
+
+    <string-array name="category_array">
+        <item>Categories</item>
+        <item>Accessories</item>
+        <item>Bakeries</item>
+        <item>Banking</item>
+        <item>Book Stores</item>
+        <item>Catering</item>
+        <item>Child Care</item>
+        <item>Children</item>
+        <item>Clothing</item>
+        <item>Construction</item>
+        <item>Creative Industries</item>
+        <item>Cultural Art</item>
+        <item>Educational</item>
+        <item>Groceries</item>
+        <item>Hair &amp; Beauty</item>
+        <item>Hair Salons - F</item>
+        <item>Hair Salons - M</item>
+        <item>Holistic Health</item>
+        <item>Housewares</item>
+        <item>Housing</item>
+        <item>Fashion</item>
+        <item>Money</item>
+        <item>Nursery</item>
+        <item>Restaurants &amp; Take aways</item>
+        <item>Skilled Trades</item>
+        <item>Skin Products</item>
+        <item>Support Services</item>
+        <item>Venues</item>
+        <item>Other</item>
+</string-array>
+
+    <string-array name="type_array">
+        <item>Other</item>
+        <item>Store</item>
+        <item>Online</item>
+    </string-array>
+
+    <string-array name="radius">
+        <item>1m</item>
+        <item>2m</item>
+        <item>3m</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>15m</item>
+        <item>20m</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+
+</resources>

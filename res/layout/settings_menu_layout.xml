@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="General settings"
+        android:id="@+id/loc_settings_menu_title"
+        android:textColor="#a7a7a7" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Allow location services"
+        android:id="@+id/allow_loc_title"
+        android:layout_weight="0.99" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loc_checkBox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#660710" />
+
+    </RelativeLayout>
+</LinearLayout>

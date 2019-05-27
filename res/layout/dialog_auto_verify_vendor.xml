@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--//including "company_status", "title", {"address"}, "date_of_creation", "snippet", "company_number"-->
+    <!--snippet gives whole address -->
+    <!--{address_line_1, address_line_2, postal_code etc and locality i.e "LONDON"}-->
+    <TextView
+        android:id="@+id/tv_company_house_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:layout_gravity="center_horizontal"
+        android:capitalize="words" />
+
+    <TextView
+        android:id="@+id/tv_company_house_address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:layout_gravity="center_horizontal"
+        android:capitalize="words" />
+
+    <TextView
+        android:id="@+id/tv_company_house_address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:layout_gravity="center_horizontal"
+        android:capitalize="words" />
+
+    <TextView
+        android:id="@+id/tv_company_house_postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:layout_gravity="center_horizontal"
+        android:capitalize="words" />
+
+</LinearLayout>

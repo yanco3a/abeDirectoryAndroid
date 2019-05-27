@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SearchEntryFeature.Presentation.SearchEntryView">
+
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/action_register"
+        android:title="@string/action_register"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_register" />
+    <item
+        android:id="@+id/action_login"
+        android:title="@string/action_login"
+        android:orderInCategory="102"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_login" />
+
+    </menu>

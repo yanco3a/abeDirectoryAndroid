@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--list of all vendors by category-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/item_search_category_layout">
+
+<!--the custom list style, image, text etc...-->
+
+    <ImageView
+        android:id="@+id/image_vendor_data_item"
+        android:contentDescription="@string/descr_icon_text"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginEnd="10dip"/>
+
+    <TextView
+        android:id="@+id/tv_vendor_id_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_vendor_name_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_vendor_address3_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_vendor_postcode_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <!--to be hidden-->
+        <TextView
+            android:id="@+id/tv_vendor_address1_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_address2_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/tv_vendor_telephone_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/tv_vendor_email_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_website_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+
+        <!--android:visibility="gone"-->
+        <TextView
+            android:id="@+id/tv_vendor_type_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#08bdeb"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            />
+
+        <TextView
+            android:id="@+id/tv_trade_summary_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_trade_category_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_trade_date_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_trade_isVerified_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
+

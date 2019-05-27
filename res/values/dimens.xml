@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--identifier name here is activity_horizontal_margin jyt-->
+    <!--resource/element name here is dimen jyt-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+<dimen name="txtsmall">10sp</dimen>
+</resources>

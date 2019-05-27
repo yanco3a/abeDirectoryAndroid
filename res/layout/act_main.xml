@@ -1,0 +1,357 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".FeaturedEntryFeature.Presentation.MainView"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <!--android:background="#FFBB00">-->
+    <!-- adding search bar to main page-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp">
+        <EditText
+            android:id="@+id/et_keyword_search_home"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="@string/keyword_hint" />
+        <Button
+            android:id="@+id/btn_keyword_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_featured_entry_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="start"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/inner_featured_entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dip">
+
+
+        <LinearLayout
+            android:id="@+id/lay_rating_bar_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#191919">
+
+            <LinearLayout
+                android:id="@+id/lay_faux_placeHolder1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:orientation="vertical"
+                android:background="#191919">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/logo"
+                    android:contentDescription="logo" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_faux_placeHolder2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#191919"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="5dip">
+
+                <!-- vendor's rating -->
+            <RatingBar
+                android:id="@+id/featuredRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="false"
+                android:stepSize="0.1"
+                android:rating="0.0"
+                android:clickable="false"
+                android:layout_gravity="center_horizontal"
+                />
+                </LinearLayout>
+
+        <!-- inner featured entry layout-->
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/item_featured_entry_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dip">
+
+            <TextView
+                android:id="@+id/tv_vendor_id_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_vendor_name_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="start"
+                />
+
+            <TextView
+                android:id="@+id/tv_vendor_address3_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_gravity="center_vertical" />
+
+
+            <TextView
+                android:id="@+id/tv_vendor_postcode_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+
+
+            <!-- vendor_type or short text-->
+            <TextView
+                android:id="@+id/tv_vendor_type_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginRight="10dip"
+                android:textColor="#08bdeb"
+                />
+
+            <!-- trade category or short text-->
+            <TextView
+                android:id="@+id/tv_trade_category_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+
+
+            <!-- verified todo, use verified logo -->
+            <TextView
+                android:id="@+id/tv_trade_isVerified_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- summary, or long sentence-->
+
+
+
+    <LinearLayout
+        android:id="@+id/tv_large_text_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_trade_summary_list_item_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="#FFBB00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="2dip"
+            android:text="@string/summary_txt"/>
+
+        <TextView
+            android:id="@+id/tv_trade_summary_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="2dip"
+            android:textIsSelectable="true"
+            />
+
+        <!--decorative seperator-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_divider"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <!--android:textIsSelectable="false"-->
+            <!--android:textColor="#FFBB00"-->
+            <!--android:text="*******************"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+        <TextView
+            android:id="@+id/tv_contact_text_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textColor="#FFBB00"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="10dip"
+            android:gravity="start"
+            android:text="Contact"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="30dp">
+
+        <!--to be hidden/unhidden depending on data/vendor type-->
+        <TextView
+            android:id="@+id/tv_vendor_name_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_address1_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_address2_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_address3_list_item_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_vendor_postcode_list_item_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_telephone_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_email_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_vendor_website_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_trade_date_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_licenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+             android:layout_marginTop="40dp"
+            android:text="@string/licenses"
+            android:textColor="#8a0829"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

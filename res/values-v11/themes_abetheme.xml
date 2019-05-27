@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="abeTheme" parent="Theme.AppCompat">
+
+    <item name="android:editTextBackground">@drawable/abetheme_edit_text_holo_dark</item>
+
+    <item name="android:textColorHighlight">#997e1111</item>
+    <item name="android:textSelectHandleLeft">@drawable/abetheme_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/abetheme_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/abetheme_text_select_handle_middle</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/abetheme_btn_check_holo_dark</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/abetheme_btn_radio_holo_dark</item>
+
+    <item name="android:buttonStyle">@style/ButtonabeTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonabeTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerabeTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarabeTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarabeTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarabeTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigabeTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallabeTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleabeTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/abetheme_list_selector_holo_dark</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/abetheme_activated_background_holo_dark</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/abetheme_fastscroll_thumb_holo</item>
+
+  </style>
+
+</resources>

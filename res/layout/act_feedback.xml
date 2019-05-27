@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context=".FeedbackFeature.Presentation.FeedbackView"
+android:orientation="vertical"
+android:id="@+id/layout_feedback"
+android:background="#565270">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+         <TextView
+            android:id="@+id/tv_feedback_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_title_txt"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="@string/tester_introduction_txt1"/>
+
+
+        <LinearLayout
+            android:id="@+id/outer_feedback_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dip"
+            android:layout_gravity="center"
+            android:gravity="center|center_vertical|center_horizontal">
+
+            <!--1. Are you a business user? Yes/No-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+                <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/radio_business_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_yes"
+                    android:onClick="isBusiness"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_business_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_no"
+                    android:onClick="isBusiness"/>
+            </RadioGroup>
+                </LinearLayout>
+
+            <!--2. Which region of London are you based? (Please select, optional)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/tester_fb_q2"/>
+
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio_region_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barnet_enfield_haringey"
+                    android:onClick="testerIsBasedIn"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_region_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brent_harrow"
+                    android:onClick="testerIsBasedIn"/>
+
+
+                <RadioButton android:id="@+id/radio_region_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hillingdon"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ealing_hammersmith_hounslow"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camden_islington"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kensington_chelsea_westminster"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/east_london_city_of_london"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lambeth_southwark_lewisham"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kingston_richmond"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/merton_sutton_wandsworth"
+                    android:onClick="testerIsBasedIn"/>
+
+
+                <RadioButton android:id="@+id/radio_region_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/croydon"
+                    android:onClick="testerIsBasedIn"/>
+
+                 <RadioButton android:id="@+id/radio_region_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bexley_bromley_greenwich"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barking_havering"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redbridge_waltham_forest"
+                    android:onClick="testerIsBasedIn"/>
+
+                <RadioButton android:id="@+id/radio_region_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:onClick="testerIsBasedIn"/>
+            </RadioGroup>
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                >
+            <!--3. Which region of London do you shop most? (Please select, optional)-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q3"/>
+
+             </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio2_region_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barnet_enfield_haringey"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brent_harrow"
+                    android:onClick="testerShopsIn"/>
+
+
+                <RadioButton android:id="@+id/radio2_region_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hillingdon"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ealing_hammersmith_hounslow"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camden_islington"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kensington_chelsea_westminster"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/east_london_city_of_london"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lambeth_southwark_lewisham"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kingston_richmond"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/merton_sutton_wandsworth"
+                    android:onClick="testerShopsIn"/>
+
+
+                <RadioButton android:id="@+id/radio2_region_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/croydon"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bexley_bromley_greenwich"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barking_havering"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redbridge_waltham_forest"
+                    android:onClick="testerShopsIn"/>
+
+                <RadioButton android:id="@+id/radio2_region_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:onClick="testerShopsIn"/>
+            </RadioGroup>
+</LinearLayout>
+
+
+            <!-- 4. Were you able to register & login to Abe successfully? (Please select. Yes, No, I didn't want to, N/A)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                 <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RadioButton android:id="@+id/radio_succ_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_yes"
+                    android:onClick="logRegSuccess"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_succ_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_no"
+                    android:onClick="logRegSuccess"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_succ_didnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_didnt"
+                    android:onClick="logRegSuccess"
+                    android:layout_marginRight="5dip"/>
+            </RadioGroup>
+</LinearLayout>
+
+
+            <!--4.a. If Yes, how easy was it to register & login? 1, means extremely difficult. 10, extremely easy (please select)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q4a"/>
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio_succ_easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_easy"
+                    android:onClick="logRegEasy"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_succ_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_ok"
+                    android:onClick="logRegEasy"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_succ_difficult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_difficult"
+                    android:onClick="logRegEasy"
+                    android:layout_marginRight="5dip"/>
+            </RadioGroup>
+</LinearLayout>
+
+            <!--5. What feature(s) did you use on the app?  (Select all that apply)-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                android:layout_gravity="right"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                 <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tv_required"
+                    android:textColor="#910d18"/>
+            </LinearLayout>
+
+            <CheckBox android:id="@+id/chkbx_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_txt"
+                android:onClick="whichFeatures"/>
+
+            <CheckBox android:id="@+id/chkbx_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_txt"
+                android:onClick="whichFeatures"/>
+
+            <CheckBox android:id="@+id/chkbx_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_txt"
+            android:onClick="whichFeatures"/>
+
+            <CheckBox android:id="@+id/chkbx_rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rad_txt"
+            android:onClick="whichFeatures"/>
+
+            <CheckBox android:id="@+id/chkbx_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_txt"
+            android:onClick="whichFeatures"/>
+
+            <CheckBox android:id="@+id/chkbx_create_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_list_txt"
+            android:onClick="whichFeatures"/>
+
+
+            <CheckBox android:id="@+id/chkbx_rate_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/answ_rate_review"
+                android:onClick="whichFeatures"/>
+
+                <CheckBox android:id="@+id/chkbx_create_na"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_none"
+                    android:onClick="whichFeatures"/>
+
+</LinearLayout>
+
+            <!--6. If applicable, how easy was it to search for a business(es) on Abe?-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tester_fb_q6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio_search_easy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_easy"
+                    android:onClick="howWasSearch"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_search_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_ok"
+                    android:onClick="howWasSearch"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_search_difficult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_difficult"
+                    android:onClick="howWasSearch"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_search_na"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_na"
+                    android:onClick="howWasSearch"
+                    android:layout_marginRight="5dip"/>
+            </RadioGroup>
+</LinearLayout>
+
+
+
+            <!--7. If applicable, how impressed were you by the businesses you found on Abe?-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q7"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio_impressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_impressed"
+                    android:onClick="howImpressed"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_neutral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_neutral"
+                    android:onClick="howImpressed"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_not_impressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_not_impressed"
+                    android:onClick="howImpressed"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_imppressed_na"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_na"
+                    android:onClick="howImpressed"
+                    android:layout_marginRight="5dip"/>
+            </RadioGroup>
+</LinearLayout>
+
+            <!--8. How often do you think you’ll use the app in the next six months?-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q8"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/radio_daily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_daily"
+                    android:onClick="howOften"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_weekly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_weekly"
+                    android:onClick="howOften"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_fortnightly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_fortnightly"
+                    android:onClick="howOften"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_monthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_monthly"
+                    android:onClick="howOften"
+                    android:layout_marginRight="5dip"/>
+
+                <RadioButton android:id="@+id/radio_never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answ_never"
+                    android:onClick="howOften"
+                    android:layout_marginRight="5dip"/>
+            </RadioGroup>
+</LinearLayout>
+
+            <!--9. Is there anything you would do to improve the app?-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dip"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tester_fb_q9"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_improve_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textNoSuggestions|textVisiblePassword"
+                android:hint="@string/suggestions_hint"
+                android:maxLength="1000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tester_email_txt"
+                        android:layout_marginTop="20dip"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/tv_required"
+                        android:textColor="#910d18"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_tester_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email_add_hint"/>
+
+                </LinearLayout>
+            <Button
+                android:id="@+id/btn_tester_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.Button.Small"
+                android:text="@string/btn_submit_txt"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
